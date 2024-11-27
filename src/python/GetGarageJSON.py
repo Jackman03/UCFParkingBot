@@ -4,6 +4,7 @@
 
 import requests
 import json
+import datetime
 #Constant
 URL = 'https://secure.parking.ucf.edu/GarageCounter/GetOccupancy'
         
@@ -24,7 +25,6 @@ def DumpJSON(URL):
 
     #For each garage print out the name, available and total spots.
     #We know there are 9 garages/lots
-    GaragesList = []
     for Garage in range(0,9):
         GarageName = ParkingData[Garage]['location']['name']
         GarageAvailable = ParkingData[Garage]['location']['counts']['available']
@@ -40,8 +40,13 @@ def DumpJSON(URL):
 
         #put the garages and other info into a JSON so its easier to read what we need.
         #also easier to transmit to a JavaScript file
-        with open('Garages.json' , 'w') as json_file:
-            json.dump(ParkingData, json_file,indent=4)
+
+        #    filtered_data = [{"name": person["name"], "email": person["email"]} for person in data["results"]]\\
+        now = datetime.datetime.now()
+        print(now)
+        GaragesList = [{"Garage Name": GarageName["Garage Name"], "Garage Availibility": int(GarageAvailable["Garage Availibility"]), "Total Spots" : int(GarageTotal["Total Spots"]), "Total Occupied": int(GarageOccupied["Total Occupied"])}]
+        with open('Garages.json' , 'a') as json_file:
+            json.dump(GaragesList, json_file,indent=4)
 
         
 
