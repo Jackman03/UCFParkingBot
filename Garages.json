@@ -1,0 +1,463 @@
+[
+    {
+        "Garage Name": "Garage A",
+        "Garage Availibility": 1640,
+        "Total Spots": 1647,
+        "Total Occupied": 7,
+        "Time Stamp": [
+    {
+        "Garage Name": "Garage A",
+        "Garage Availibility": 1639,
+        "Total Spots": 1647,
+        "Total Occupied": 8,
+        "Time Stamp": "2024-11-27 16:44:05.838855",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage B",
+        "Garage Availibility": 1289,
+        "Total Spots": 1289,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 16:44:05.839190",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage C",
+        "Garage Availibility": 1729,
+        "Total Spots": 1852,
+        "Total Occupied": 123,
+        "Time Stamp": "2024-11-27 16:44:05.839350",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage D",
+        "Garage Availibility": 1255,
+        "Total Spots": 1289,
+        "Total Occupied": 24,
+        "Time Stamp": "2024-11-27 16:44:05.839475",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage H",
+        "Garage Availibility": 1340,
+        "Total Spots": 1340,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 16:44:05.839610",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage I",
+        "Garage Availibility": 1270,
+        "Total Spots": 1270,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 16:44:05.839741",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Amelia Garage",
+        "Garage Availibility": 1249,
+        "Total Spots": 1249,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 16:44:05.839854",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Paramore Garage",
+        "Garage Availibility": 571,
+        "Total Spots": 571,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 16:44:05.839961",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Rosen Lot",
+        "Garage Availibility": 957,
+        "Total Spots": 964,
+        "Total Occupied": 7,
+        "Time Stamp": "2024-11-27 16:44:05.840062",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage A",
+        "Garage Availibility": 1647,
+        "Total Spots": 1647,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 20:45:07.769340",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage B",
+        "Garage Availibility": 1289,
+        "Total Spots": 1289,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 20:45:07.769843",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage C",
+        "Garage Availibility": 1751,
+        "Total Spots": 1852,
+        "Total Occupied": 101,
+        "Time Stamp": "2024-11-27 20:45:07.770126",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage D",
+        "Garage Availibility": 1042,
+        "Total Spots": 1289,
+        "Total Occupied": 237,
+        "Time Stamp": "2024-11-27 20:45:07.770424",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage H",
+        "Garage Availibility": 1273,
+        "Total Spots": 1340,
+        "Total Occupied": 67,
+        "Time Stamp": "2024-11-27 20:45:07.770690",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage I",
+        "Garage Availibility": 1270,
+        "Total Spots": 1270,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 20:45:07.770906",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Amelia Garage",
+        "Garage Availibility": 1249,
+        "Total Spots": 1249,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 20:45:07.771143",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Paramore Garage",
+        "Garage Availibility": 571,
+        "Total Spots": 571,
+        "Total Occupied": 0,
+        "Time Stamp": "2024-11-27 20:45:07.771401",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Rosen Lot",
+        "Garage Availibility": 947,
+        "Total Spots": 964,
+        "Total Occupied": 17,
+        "Time Stamp": "2024-11-27 20:45:07.771589",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage A",
+        "Garage Availibility": 1647,
+        "Total Spots": 1647,
+        "Total Occupied": 0,
+        "Time Stamp": [
+    {
+        "Garage Name": "Garage A",
+        "Garage Availibility": 1647,
+        "Total Spots": 1647,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage B",
+        "Garage Availibility": 1289,
+        "Total Spots": 1289,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage C",
+        "Garage Availibility": 1751,
+        "Total Spots": 1852,
+        "Total Occupied": 101,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage D",
+        "Garage Availibility": 1042,
+        "Total Spots": 1289,
+        "Total Occupied": 237,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage H",
+        "Garage Availibility": 1273,
+        "Total Spots": 1340,
+        "Total Occupied": 67,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage I",
+        "Garage Availibility": 1270,
+        "Total Spots": 1270,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Amelia Garage",
+        "Garage Availibility": 1249,
+        "Total Spots": 1249,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Paramore Garage",
+        "Garage Availibility": 571,
+        "Total Spots": 571,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Rosen Lot",
+        "Garage Availibility": 948,
+        "Total Spots": 964,
+        "Total Occupied": 16,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage A",
+        "Garage Availibility": 1647,
+        "Total Spots": 1647,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage B",
+        "Garage Availibility": 1289,
+        "Total Spots": 1289,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage C",
+        "Garage Availibility": 1749,
+        "Total Spots": 1852,
+        "Total Occupied": 103,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage D",
+        "Garage Availibility": 1044,
+        "Total Spots": 1289,
+        "Total Occupied": 235,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage H",
+        "Garage Availibility": 1273,
+        "Total Spots": 1340,
+        "Total Occupied": 67,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage I",
+        "Garage Availibility": 1270,
+        "Total Spots": 1270,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Amelia Garage",
+        "Garage Availibility": 1249,
+        "Total Spots": 1249,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Paramore Garage",
+        "Garage Availibility": 571,
+        "Total Spots": 571,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Rosen Lot",
+        "Garage Availibility": 944,
+        "Total Spots": 964,
+        "Total Occupied": 20,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage A",
+        "Garage Availibility": 1647,
+        "Total Spots": 1647,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage B",
+        "Garage Availibility": 1289,
+        "Total Spots": 1289,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage C",
+        "Garage Availibility": 1749,
+        "Total Spots": 1852,
+        "Total Occupied": 103,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage D",
+        "Garage Availibility": 1045,
+        "Total Spots": 1289,
+        "Total Occupied": 234,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage H",
+        "Garage Availibility": 1273,
+        "Total Spots": 1340,
+        "Total Occupied": 67,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Garage I",
+        "Garage Availibility": 1270,
+        "Total Spots": 1270,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Amelia Garage",
+        "Garage Availibility": 1249,
+        "Total Spots": 1249,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Paramore Garage",
+        "Garage Availibility": 571,
+        "Total Spots": 571,
+        "Total Occupied": 0,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+][
+    {
+        "Garage Name": "Rosen Lot",
+        "Garage Availibility": 943,
+        "Total Spots": 964,
+        "Total Occupied": 21,
+        "Time Stamp": "1/1/2000 00:00:00.00",
+        "Amount Changed": 0,
+        "Percent Changed": 0
+    }
+]

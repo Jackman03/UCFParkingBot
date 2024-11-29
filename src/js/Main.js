@@ -1,3 +1,3 @@
 //load the JSON Garage file
 
-fetch("./Garages.json")
+fetch("src/data/Garages.json")

@@ -1,0 +1,74 @@
+[
+    {
+        "Garage Name": "Garage A",
+        "Garage Availibility": 1642,
+        "Total Spots": 1647,
+        "Total Occupied": 5,
+        "Timestamp": "2024-11-29T10:54:27.444697",
+        "Amount Changed": 0
+    },
+    {
+        "Garage Name": "Garage B",
+        "Garage Availibility": 1289,
+        "Total Spots": 1289,
+        "Total Occupied": 0,
+        "Timestamp": "2024-11-29T10:54:27.444780",
+        "Amount Changed": 0
+    },
+    {
+        "Garage Name": "Garage C",
+        "Garage Availibility": 1836,
+        "Total Spots": 1852,
+        "Total Occupied": 16,
+        "Timestamp": "2024-11-29T10:54:27.444798",
+        "Amount Changed": 0
+    },
+    {
+        "Garage Name": "Garage D",
+        "Garage Availibility": 1262,
+        "Total Spots": 1289,
+        "Total Occupied": 17,
+        "Timestamp": "2024-11-29T10:54:27.444809",
+        "Amount Changed": 0
+    },
+    {
+        "Garage Name": "Garage H",
+        "Garage Availibility": 1339,
+        "Total Spots": 1340,
+        "Total Occupied": 1,
+        "Timestamp": "2024-11-29T10:54:27.444819",
+        "Amount Changed": 0
+    },
+    {
+        "Garage Name": "Garage I",
+        "Garage Availibility": 1268,
+        "Total Spots": 1270,
+        "Total Occupied": 2,
+        "Timestamp": "2024-11-29T10:54:27.444830",
+        "Amount Changed": 0
+    },
+    {
+        "Garage Name": "Amelia Garage",
+        "Garage Availibility": 1249,
+        "Total Spots": 1249,
+        "Total Occupied": 0,
+        "Timestamp": "2024-11-29T10:54:27.444839",
+        "Amount Changed": 0
+    },
+    {
+        "Garage Name": "Paramore Garage",
+        "Garage Availibility": 562,
+        "Total Spots": 571,
+        "Total Occupied": 9,
+        "Timestamp": "2024-11-29T10:54:27.444849",
+        "Amount Changed": 0
+    },
+    {
+        "Garage Name": "Rosen Lot",
+        "Garage Availibility": 964,
+        "Total Spots": 964,
+        "Total Occupied": 0,
+        "Timestamp": "2024-11-29T10:54:27.444858",
+        "Amount Changed": 0
+    }
+]
