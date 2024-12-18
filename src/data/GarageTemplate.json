@@ -1,12 +1,12 @@
 [
 
     {
-        "Garage Name": "Garage Z",
-        "Garage Availibility": 0,
-        "Total Spots": 0,
-        "Total Occupied": 0,
+        "GarageName": "Garage Z",
+        "GarageAvailibility": 0,
+        "TotalSpots": 0,
+        "TotalOccupied": 0,
         "Time Stamp": "1/1/2000 00:00:00.00",
-        "Amount Changed": 0
+        "AmountChanged": 0
     }
 
 ]

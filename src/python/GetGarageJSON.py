@@ -10,6 +10,7 @@ from datetime import datetime
 #Hopefully this url wont change...
 URL = 'https://secure.parking.ucf.edu/GarageCounter/GetOccupancy'
 
+
 #Prints out the needed garage info to the console for debugging   
 def DebugGarages(ParkingData,PreviousData):
      for Garage in range(0,9):
@@ -19,7 +20,7 @@ def DebugGarages(ParkingData,PreviousData):
         GarageAvailable = int(ParkingData[Garage]['location']['counts']['available'])
         GarageTotal = int(ParkingData[Garage]['location']['counts']['total'])
         GarageOccupied = int(ParkingData[Garage]['location']['counts']['occupied'])
-        GarageChange = int(ParkingData[Garage]['location']['counts']['available']) - int(PreviousData[Garage]["Garage Availibility"])
+        GarageChange = int(ParkingData[Garage]['location']['counts']['available']) - int(PreviousData[Garage]["GarageAvailibility"])
 
 
         #Prints out for debugging
@@ -31,7 +32,7 @@ def DebugGarages(ParkingData,PreviousData):
         
 
 #dumps the JSON into a file for keeping.
-def DumpJSON(URL):
+def DumpJSON(URL: str):
     #send GET request
     try:
         r = requests.get(URL)
@@ -54,12 +55,12 @@ def DumpJSON(URL):
 
     #Filter the orginal data to only get what name, avilibility, total spots, and occupied spots
     #These will be passed to the js file to be put on the web
-    BetterParkingData = [{"Garage Name": ParkingData[Garage]['location']['name'], 
-                          "Garage Availibility": int(ParkingData[Garage]['location']['counts']['available']),
-                          "Total Spots": int(ParkingData[Garage]['location']['counts']['total']),
-                          "Total Occupied": int(ParkingData[Garage]['location']['counts']['occupied']),
+    BetterParkingData = [{"GarageName": ParkingData[Garage]['location']['name'], 
+                          "GarageAvailibility": int(ParkingData[Garage]['location']['counts']['available']),
+                          "TotalSpots": int(ParkingData[Garage]['location']['counts']['total']),
+                          "TotalOccupied": int(ParkingData[Garage]['location']['counts']['occupied']),
                           "Timestamp": datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f'),
-                          "Amount Changed": int(ParkingData[Garage]['location']['counts']['available']) - int(PreviousData[Garage]["Garage Availibility"])
+                          "AmountChanged": int(ParkingData[Garage]['location']['counts']['available']) - int(PreviousData[Garage]["GarageAvailibility"])
                         }for Garage in range(0,9)]
     
     #Dumps filtered JSON to be read by a js file
