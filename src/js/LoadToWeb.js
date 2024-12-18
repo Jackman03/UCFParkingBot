@@ -1,5 +1,8 @@
 //load the JSON Garage file
+
+
 const list = document.querySelector('dl');
+const time = document.querySelector('p');
 
 
 fetch("../data/Garages.json")
@@ -10,7 +13,9 @@ fetch("../data/Garages.json")
             list.insertAdjacentHTML('beforeend',`<dt> Garage Name: ${Garage.GarageName}</dt>
                 <dd>Availibility: ${Garage.GarageAvailibility}</dd>
                 <dd>Spots Occupied: ${Garage.TotalOccupied}</dd>
-                <dd>Amount Changed: ${Garage.AmountChanged} <br>`);
+                <dd>Amount Changed: ${Garage.AmountChanged} <br><br>`);
+                
         })
     });
+
 
