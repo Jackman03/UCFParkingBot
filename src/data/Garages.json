@@ -1,74 +1,74 @@
 [
     {
         "GarageName": "Garage A",
-        "GarageAvailibility": 1639,
+        "GarageAvailibility": 1643,
         "TotalSpots": 1647,
-        "TotalOccupied": 8,
-        "Timestamp": "2024-12-23T13:34:49.239252",
-        "AmountChanged": 18
+        "TotalOccupied": 4,
+        "Timestamp": "2024-12-24T14:18:28.831798",
+        "AmountChanged": -1
     },
     {
         "GarageName": "Garage B",
-        "GarageAvailibility": 1283,
+        "GarageAvailibility": 1287,
         "TotalSpots": 1289,
-        "TotalOccupied": 6,
-        "Timestamp": "2024-12-23T13:34:49.239332",
-        "AmountChanged": 72
+        "TotalOccupied": 2,
+        "Timestamp": "2024-12-24T14:18:28.831854",
+        "AmountChanged": 0
     },
     {
         "GarageName": "Garage C",
-        "GarageAvailibility": 1808,
+        "GarageAvailibility": 1841,
         "TotalSpots": 1852,
-        "TotalOccupied": 44,
-        "Timestamp": "2024-12-23T13:34:49.239379",
-        "AmountChanged": 165
+        "TotalOccupied": 11,
+        "Timestamp": "2024-12-24T14:18:28.831869",
+        "AmountChanged": 0
     },
     {
         "GarageName": "Garage D",
-        "GarageAvailibility": 1273,
+        "GarageAvailibility": 1276,
         "TotalSpots": 1289,
-        "TotalOccupied": 6,
-        "Timestamp": "2024-12-23T13:34:49.239395",
-        "AmountChanged": 26
+        "TotalOccupied": 3,
+        "Timestamp": "2024-12-24T14:18:28.831878",
+        "AmountChanged": 0
     },
     {
         "GarageName": "Garage H",
-        "GarageAvailibility": 1338,
+        "GarageAvailibility": 1340,
         "TotalSpots": 1340,
-        "TotalOccupied": 2,
-        "Timestamp": "2024-12-23T13:34:49.239409",
-        "AmountChanged": -2
+        "TotalOccupied": 0,
+        "Timestamp": "2024-12-24T14:18:28.831887",
+        "AmountChanged": 0
     },
     {
         "GarageName": "Garage I",
-        "GarageAvailibility": 1270,
+        "GarageAvailibility": 1268,
         "TotalSpots": 1270,
-        "TotalOccupied": 0,
-        "Timestamp": "2024-12-23T13:34:49.239423",
-        "AmountChanged": 0
+        "TotalOccupied": 2,
+        "Timestamp": "2024-12-24T14:18:28.831895",
+        "AmountChanged": 1
     },
     {
         "GarageName": "Amelia Garage",
         "GarageAvailibility": 1249,
         "TotalSpots": 1249,
         "TotalOccupied": 0,
-        "Timestamp": "2024-12-23T13:34:49.239436",
+        "Timestamp": "2024-12-24T14:18:28.831902",
         "AmountChanged": 0
     },
     {
         "GarageName": "Paramore Garage",
-        "GarageAvailibility": 562,
+        "GarageAvailibility": 568,
         "TotalSpots": 571,
-        "TotalOccupied": 9,
-        "Timestamp": "2024-12-23T13:34:49.239449",
-        "AmountChanged": -9
+        "TotalOccupied": 3,
+        "Timestamp": "2024-12-24T14:18:28.831909",
+        "AmountChanged": -2
     },
     {
         "GarageName": "Rosen Lot",
-        "GarageAvailibility": 964,
+        "GarageAvailibility": 960,
         "TotalSpots": 964,
-        "TotalOccupied": 0,
-        "Timestamp": "2024-12-23T13:34:49.239461",
-        "AmountChanged": 27
+        "TotalOccupied": 4,
+        "Timestamp": "2024-12-24T14:18:28.831917",
+        "AmountChanged": 1
     }
 ]

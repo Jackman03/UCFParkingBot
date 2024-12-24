@@ -31,7 +31,7 @@ async def on_ready():
 #map returns the JS map of the parking counts
 
 @client.command()
-async def DisplayParking():
+async def DisplayParking(ctx):
 
     with open('src/data/Garages.json' , 'r') as json_file:
         Data = json.load(json_file)
@@ -39,10 +39,33 @@ async def DisplayParking():
     for Garage in Data:
 
 
-        print(f'Garage: {Garage['GarageName']}')
-        print(f'Spots available: {Garage['GarageAvailibility']}')
-        print(f'Occupied spots: {Garage['TotalOccupied']}')
-        print(f'Amount changed: {Garage['AmountChanged']}')
-        print('\n')
+        await ctx.send(f'Garage: {Garage['GarageName']}\n'+ 
+        f'Spots available: {Garage['GarageAvailibility']}\n'+
+        f'Occupied spots: {Garage['TotalOccupied']}\n'+
+        f'Amount changed: {Garage['AmountChanged']}\n\n')
 
-DisplayParking()
+@client.command()
+async def Garage(ctx,*,garage:str):
+
+    await ctx.send(garage)
+    with open('src/data/Garages.json' , 'r') as json_file:
+        Data = json.load(json_file)
+
+    for Garage in Data:
+
+        if Garage['GarageName'] == garage:
+            await ctx.send(f'Garage: {Garage['GarageName']}\n'+ 
+            f'Spots available: {Garage['GarageAvailibility']}\n'+
+            f'Occupied spots: {Garage['TotalOccupied']}\n'+
+            f'Amount changed: {Garage['AmountChanged']}\n\n')
+            return
+
+    await ctx.send('Garage not found')
+
+
+       
+Configure()
+client.run(os.getenv('DiscordKey'))
+
+
+
