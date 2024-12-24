@@ -2,7 +2,6 @@
 
 
 const list = document.querySelector('dl');
-const time = document.querySelector('p');
 
 
 fetch("../data/Garages.json")
