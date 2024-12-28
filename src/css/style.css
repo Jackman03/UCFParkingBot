@@ -3,8 +3,19 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    color:Green;
+
 }
+
+.garage {
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 100px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: black;
+    color: gold;
+  }
 /*Each of these divs will be for a specific garage. Finding out the cods will be hard...*/
 .GarageA{
     Background-color: black;
@@ -64,4 +75,13 @@
     position: absolute;
     top: 700px;
     left: 500px;
+}
+
+.footer{
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 500px;
+    background-color: black;
+    color: gold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

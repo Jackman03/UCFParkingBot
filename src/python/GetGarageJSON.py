@@ -29,7 +29,7 @@ def DebugGarages(ParkingData,PreviousData):
         print(f'Total spots: {GarageTotal}')
         print(f'Occupied spots: {GarageOccupied}')
         print(f'Amount changed: {GarageChange}')
-        curtime = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
+        curtime = datetime.now().strftime('%Y-%m-%d%H:%M:%S.%f')
         print(f'{curtime}\n')
         
 
@@ -39,7 +39,7 @@ def DumpJSON(URL: str,debug:bool):
     try:
         r = requests.get(URL)
     except:
-        print('Request succeded')
+        if debug: print('Request Failed')
         print(Exception)
     
     
@@ -63,7 +63,7 @@ def DumpJSON(URL: str,debug:bool):
                           "GarageAvailibility": int(ParkingData[Garage]['location']['counts']['available']),
                           "TotalSpots": int(ParkingData[Garage]['location']['counts']['total']),
                           "TotalOccupied": int(ParkingData[Garage]['location']['counts']['occupied']),
-                          "Timestamp": datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f'),
+                          "Timestamp": datetime.now().strftime('%Y-%m-%d%H:%M:%S.%f'),
                           "AmountChanged": int(ParkingData[Garage]['location']['counts']['available']) - int(PreviousData[Garage]["GarageAvailibility"])
                         }for Garage in range(0,9)]
     
