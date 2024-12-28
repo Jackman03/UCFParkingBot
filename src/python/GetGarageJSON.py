@@ -29,19 +29,23 @@ def DebugGarages(ParkingData,PreviousData):
         print(f'Total spots: {GarageTotal}')
         print(f'Occupied spots: {GarageOccupied}')
         print(f'Amount changed: {GarageChange}')
+        curtime = datetime.now().strftime('%Y-%m-%dT%H:%M:%S.%f')
+        print(f'{curtime}\n')
         
 
 #dumps the JSON into a file for keeping.
-def DumpJSON(URL: str):
+def DumpJSON(URL: str,debug:bool):
     #send GET request
     try:
         r = requests.get(URL)
     except:
+        print('Request succeded')
         print(Exception)
     
     
     #Loads request json into an object
     ParkingData = r.json()
+    
     
     #dump JSON into a file for easier viewing
     with open('src/data/ParkingData.json' , 'w') as json_file:
@@ -52,7 +56,7 @@ def DumpJSON(URL: str):
     #Current spaces - previous spaces
     with open('src/data/Garages.json' , 'r') as json_file:
         PreviousData = json.load(json_file)
-
+    if debug: DebugGarages(ParkingData,PreviousData)
     #Filter the orginal data to only get what name, avilibility, total spots, and occupied spots
     #These will be passed to the js file to be put on the web
     BetterParkingData = [{"GarageName": ParkingData[Garage]['location']['name'], 
@@ -63,15 +67,20 @@ def DumpJSON(URL: str):
                           "AmountChanged": int(ParkingData[Garage]['location']['counts']['available']) - int(PreviousData[Garage]["GarageAvailibility"])
                         }for Garage in range(0,9)]
     
+    
     #Dumps filtered JSON to be read by a js file
     #Also used to find the avilibility change
-    with open('src/data/Garages.json' , 'w') as json_file:
-            json.dump(BetterParkingData, json_file,indent=4)
+    try:
+        with open('src/data/Garages.json' , 'w') as json_file:
+                json.dump(BetterParkingData, json_file,indent=4)
+    except:
+        print('JSON failed to save')
+        print(Exception)
 
-
+    
     #
     
 
 
     
-DumpJSON(URL)
+DumpJSON(URL,True)

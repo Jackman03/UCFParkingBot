@@ -18,7 +18,7 @@ intents = discord.Intents.all()
 intents.message_content = True
 intents.members = True
 
-client = commands.Bot(command_prefix = '$',intents=intents)
+client = commands.Bot(command_prefix = '/',intents=intents)
 
 @client.event
 #sets up first command
@@ -31,7 +31,7 @@ async def on_ready():
 #map returns the JS map of the parking counts
 
 @client.command()
-async def DisplayParking(ctx):
+async def ListAll(ctx):
 
     with open('src/data/Garages.json' , 'r') as json_file:
         Data = json.load(json_file)
@@ -43,6 +43,22 @@ async def DisplayParking(ctx):
         f'Spots available: {Garage['GarageAvailibility']}\n'+
         f'Occupied spots: {Garage['TotalOccupied']}\n'+
         f'Amount changed: {Garage['AmountChanged']}\n\n')
+
+
+@client.command()
+async def ListGarages(ctx):
+
+    with open('src/data/Garages.json' , 'r') as json_file:
+        Data = json.load(json_file)
+
+    for Garage in Data:
+        await ctx.send(f'Garage: {Garage['GarageName']}\n\n')
+
+
+
+
+
+
 
 @client.command()
 async def Garage(ctx,*,garage:str):
@@ -61,7 +77,17 @@ async def Garage(ctx,*,garage:str):
             return
 
     await ctx.send('Garage not found')
-
+@client.command()
+async def Help(ctx):
+    await ctx.send('UCF Parking Bot help menu\n' +
+                   'ListAll - Lists all of the current Garages and there numbers\n'+
+                   'Garage (Garage Name) - Lists the current numbers for the specified garage\n'+
+                   'ListGarages - Lists all of the availible garages\n'+
+                   'Helo - Displays the help menu')
+                   
+                   
+                   
+                   
 
        
 Configure()
