@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Program to dump JSON data from the Parking Services API
 #11/25/2024
 #Jackson Vaughn

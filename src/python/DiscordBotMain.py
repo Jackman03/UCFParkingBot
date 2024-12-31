@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Jackson vaughn
 #Driver for the main discord bot
 import json
@@ -14,6 +15,7 @@ from GetGarageJSON import DumpJSON, URL
 
 def Configure():
     load_dotenv()
+    DumpJSON(URL,False) #refresh data on startup
 
 #the start of a command prefix. when a user types a $ the bot will be registered
 intents = discord.Intents.all()
@@ -43,7 +45,6 @@ async def ListAll(ctx):
         Data = json.load(json_file)
 
     for Garage in Data:
-
 
         await ctx.send(f'`Garage: {Garage['GarageName']}\n'+ 
         f'Spots available: {Garage['GarageAvailibility']}\n'+
@@ -106,8 +107,9 @@ async def Map(ctx):
 
 @bot.command()
 async def SendParkingUpdate(ctx):
-    channel = os.getenv('ChannelID')
+    channel = bot.get_channel(1321193900752506921)
     await channel.send('Hello world')
+ 
 
 
 @bot.event
@@ -118,12 +120,6 @@ async def on_command_error(ctx,error):
         await ctx.send(f"Missing arguments for the command. Please provide all necessary parameters.")
     else:
         await ctx.send(f"An error occured: {str(error)}")
-
-
-
-
-
-
 
 
 @bot.event

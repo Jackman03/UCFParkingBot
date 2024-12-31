@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Automaticly refreshes the parking json every 10 minuets
 import GetGarageJSON as JSONControl
 import time

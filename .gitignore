@@ -2,3 +2,4 @@ ParkingData.json
 .env
 __pycache__/
 .vscode/
+env/
