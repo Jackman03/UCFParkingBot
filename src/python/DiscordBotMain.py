@@ -22,7 +22,6 @@ intents = discord.Intents.all()
 intents.message_content = True
 intents.members = True
 
-CHANNEL_ID = os.getenv('ChannelID')
 
 bot = commands.Bot(command_prefix = '!',intents=intents)
 
@@ -104,13 +103,6 @@ async def Map(ctx):
     WebPage = discord.Embed(title="UCF Parking Helper", url=url, description="Map of UCF Parking")
 
     await ctx.send(embed=WebPage)
-
-@bot.command()
-async def SendParkingUpdate(ctx):
-    channel = bot.get_channel(1321193900752506921)
-    await channel.send('Hello world')
- 
-
 
 @bot.event
 async def on_command_error(ctx,error):
