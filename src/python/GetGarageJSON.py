@@ -37,12 +37,16 @@ def DebugGarages(ParkingData,PreviousData):
 #dumps the JSON into a file for keeping.
 def DumpJSON(URL: str,debug:bool):
     #send GET request
-    try:
-        r = requests.get(URL)
-    except:
-        if debug: print('Request Failed')
-        print(Exception)
     
+    r = requests.get(URL)
+
+    code = r.status_code
+
+    if code != 200:
+         print(code)
+         print(f'https://http.cat/{code}')
+         return
+   
     
     #Loads request json into an object
     ParkingData = r.json()
@@ -55,8 +59,11 @@ def DumpJSON(URL: str,debug:bool):
 
     #Load the previous data so we can calculate the availibity change
     #Current spaces - previous spaces
+    
     with open('src/data/Garages.json' , 'r') as json_file:
         PreviousData = json.load(json_file)
+  
+    
     if debug: DebugGarages(ParkingData,PreviousData)
     #Filter the orginal data to only get what name, avilibility, total spots, and occupied spots
     #These will be passed to the js file to be put on the web
@@ -74,9 +81,10 @@ def DumpJSON(URL: str,debug:bool):
     try:
         with open('src/data/Garages.json' , 'w') as json_file:
                 json.dump(BetterParkingData, json_file,indent=4)
-    except:
+    except Exception as e: 
+        print(e)
         print('JSON failed to save')
-        print(Exception)
+        
 
     
     #

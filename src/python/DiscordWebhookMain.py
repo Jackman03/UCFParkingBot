@@ -22,10 +22,10 @@ def RunHook():
     hook.execute(f'UCF Parking numbers as of {curtime}')
     for Garage in Data:
 
-        hook.execute(f'`Garage: {Garage['GarageName']}\n'+ 
+        hook.execute(f'Garage: {Garage['GarageName']}\n'+ 
             f'Spots available: {Garage['GarageAvailibility']}\n'+
             f'Occupied spots: {Garage['TotalOccupied']}\n'+
-            f'Amount changed: {Garage['AmountChanged']}`\n\n')
+            f'Amount changed: {Garage['AmountChanged']}\n\n')
     PrevTime = datetime.now() - timedelta(minutes=15)
     hook.execute(f'Last updated: {PrevTime}')
 

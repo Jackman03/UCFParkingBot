@@ -4,6 +4,8 @@
     gap: 20px;
     padding: 20px;
 
+   
+
 }
 
 .garage {
@@ -15,8 +17,15 @@
     border-radius: 8px;
     background-color: black;
     color: gold;
+
+    display:flex;
+    position: sticky;
+    top:100;
+    left: 1700px;
+    z-index: 1;
   }
-/*Each of these divs will be for a specific garage. Finding out the cods will be hard...*/
+
+/*Each of these divs will be for a specific garage. Finding out the code will be hard...*/
 .GarageA{
     Background-color: black;
     color:gold;
@@ -54,7 +63,7 @@
     display: inline-flex;
     position: absolute;
     top: 350px;
-    left: 350px;
+    left: 300px;
 }
 
 .GarageH{
@@ -74,14 +83,19 @@
     display: inline-flex;
     position: absolute;
     top: 700px;
-    left: 500px;
+    left: 400px;
 }
 
 .footer{
     border: 2px solid #ccc;
-    padding: 10px;
-    width: 500px;
+    padding: 1px;
+    width: 1000px;
     background-color: black;
     color: gold;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index:3; 
+}
+body{
+    background-image: url('/assets/ParkingMap.png');
+    background-repeat: no-repeat;
 }

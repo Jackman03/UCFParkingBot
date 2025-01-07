@@ -3,13 +3,9 @@
 #Driver for the main discord bot
 import json
 import discord
-from datetime import datetime, date
-import time
-from discord.ext import tasks, commands
+from discord.ext import commands
 import os
 from dotenv import load_dotenv
-import requests
-import asyncio
 from GetGarageJSON import DumpJSON, URL
 
 
@@ -45,10 +41,10 @@ async def ListAll(ctx):
 
     for Garage in Data:
 
-        await ctx.send(f'`Garage: {Garage['GarageName']}\n'+ 
+        await ctx.send(f'Garage: {Garage['GarageName']}\n'+ 
         f'Spots available: {Garage['GarageAvailibility']}\n'+
         f'Occupied spots: {Garage['TotalOccupied']}\n'+
-        f'Amount changed: {Garage['AmountChanged']}`\n\n')
+        f'Amount changed: {Garage['AmountChanged']}\n\n')
 
 
 @bot.command()
@@ -62,19 +58,21 @@ async def ListGarages(ctx):
 
 #Command to get Garage
 @bot.command()
-async def Garage(ctx,*,garage:str):
+async def Garage(ctx,*,garageid:str):
 
-    await ctx.send(garage)
+    garage = 'Garage ' + garageid
+
+    await ctx.send(f'Status for Garage {garageid}')
     with open('src/data/Garages.json' , 'r') as json_file:
         Data = json.load(json_file)
 
     for Garage in Data:
 
         if Garage['GarageName'] == garage:
-            await ctx.send(f'`Garage: {Garage['GarageName']}\n'+ 
+            await ctx.send(f'Garage: {Garage['GarageName']}\n'+ 
             f'Spots available: {Garage['GarageAvailibility']}\n'+
             f'Occupied spots: {Garage['TotalOccupied']}\n'+
-            f'Amount changed: {Garage['AmountChanged']}`\n\n')
+            f'Amount changed: {Garage['AmountChanged']}\n\n')
             return
 
     await ctx.send('Garage not found')
@@ -82,28 +80,20 @@ async def Garage(ctx,*,garage:str):
 #Help Command
 @bot.command()
 async def Help(ctx):
-    await ctx.send('`UCF Parking Bot help menu\n' +
+    await ctx.send('UCF Parking Bot help menu\n' +
                    'ListAll - Lists all of the current Garages and there numbers\n'+
                    'Garage (Garage Name) - Lists the current numbers for the specified garage\n'+
                    'ListGarages - Lists all of the availible garages\n'+
-                   'Help - Displays the help menu`')
+                   'Help - Displays the help menu')
 
 #Displays the parking map from the website 
 @bot.command()
 async def Map(ctx):
-    url = 'http://127.0.0.1:5500/src/html/' #funny default URL
-    #url = "https://en.wikipedia.org/wiki/Special:Random"
-    try:
-        r = requests.get(url)
-    except:
-        print('Request Failed')
-        print(Exception)
-    #uses the requests libary to send a http get to the url, then sends back a random article
-    WebPage = discord.Embed()
-    WebPage = discord.Embed(title="UCF Parking Helper", url=url, description="Map of UCF Parking")
-
-    await ctx.send(embed=WebPage)
-
+    await ctx.send(f'https://http.cat/404')
+    return
+    
+    
+   
 @bot.event
 async def on_command_error(ctx,error):
     if isinstance(error,commands.CommandNotFound):
@@ -121,6 +111,3 @@ async def on_disconnect():
                    
 Configure()
 bot.run(os.getenv('DiscordKey'))
-
-
-
