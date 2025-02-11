@@ -1,15 +1,21 @@
+#File that takes a photo of the webparking map
 from selenium import webdriver
-from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver import FirefoxOptions
+from selenium.webdriver.firefox.service import Service
+from datetime import datetime
 
-url = 'http://127.0.0.1:5500/src/html/map.html'
-driverpath = '/usr/local/bin'
+#Funny default URL
+url ='http://127.0.0.1:5500/src/html/map.html'
 
-driver = webdriver.Firefox()
+def TakeScreenshot():
+    options = FirefoxOptions()
+    service = Service(executable_path = '/snap/bin/firefox.geckodriver')
+    print(options)
+    driver = webdriver.Firefox(options=options, service=service)
 
+    driver.get(url)
+    now = datetime.now().strftime('%m-%d-%y %H:%M:%S')
+    driver.save_screenshot(f'assets/MapScreenshots/ParkingMap.png')
 
-
-driver.get(url)
- 
-driver.save_screenshot("image.png")
-
-driver.quit()
+    driver.quit()
+TakeScreenshot()

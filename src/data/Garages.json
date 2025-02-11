@@ -1,66 +1,66 @@
 [
     {
         "GarageName": "Garage A",
-        "GarageAvailibility": 461,
+        "GarageAvailibility": 897,
         "TotalSpots": 1647,
-        "TotalOccupied": 1186,
-        "Timestamp": "2025-01-0712:18:19.610954",
-        "AmountChanged": 0
+        "TotalOccupied": 750,
+        "Timestamp": "2025-01-0818:06:06.082283",
+        "AmountChanged": 58
     },
     {
         "GarageName": "Garage B",
-        "GarageAvailibility": 305,
+        "GarageAvailibility": 795,
         "TotalSpots": 1289,
-        "TotalOccupied": 984,
-        "Timestamp": "2025-01-0712:18:19.610997",
-        "AmountChanged": 0
+        "TotalOccupied": 494,
+        "Timestamp": "2025-01-0818:06:06.082295",
+        "AmountChanged": 261
     },
     {
         "GarageName": "Garage C",
-        "GarageAvailibility": 0,
+        "GarageAvailibility": 196,
         "TotalSpots": 1852,
-        "TotalOccupied": 2014,
-        "Timestamp": "2025-01-0712:18:19.611011",
-        "AmountChanged": 0
+        "TotalOccupied": 1656,
+        "Timestamp": "2025-01-0818:06:06.082304",
+        "AmountChanged": -25
     },
     {
         "GarageName": "Garage D",
-        "GarageAvailibility": 206,
+        "GarageAvailibility": 814,
         "TotalSpots": 1289,
-        "TotalOccupied": 1073,
-        "Timestamp": "2025-01-0712:18:19.611022",
-        "AmountChanged": 0
+        "TotalOccupied": 465,
+        "Timestamp": "2025-01-0818:06:06.082316",
+        "AmountChanged": 77
     },
     {
         "GarageName": "Garage H",
-        "GarageAvailibility": 201,
+        "GarageAvailibility": 914,
         "TotalSpots": 1340,
-        "TotalOccupied": 1139,
-        "Timestamp": "2025-01-0712:18:19.611033",
-        "AmountChanged": 0
+        "TotalOccupied": 426,
+        "Timestamp": "2025-01-0818:06:06.082326",
+        "AmountChanged": 376
     },
     {
         "GarageName": "Garage I",
-        "GarageAvailibility": 314,
+        "GarageAvailibility": 1025,
         "TotalSpots": 1270,
-        "TotalOccupied": 956,
-        "Timestamp": "2025-01-0712:18:19.611043",
-        "AmountChanged": 0
+        "TotalOccupied": 245,
+        "Timestamp": "2025-01-0818:06:06.082336",
+        "AmountChanged": 310
     },
     {
         "GarageName": "Amelia Garage",
         "GarageAvailibility": 1249,
         "TotalSpots": 1249,
         "TotalOccupied": 0,
-        "Timestamp": "2025-01-0712:18:19.611052",
+        "Timestamp": "2025-01-0818:06:06.082345",
         "AmountChanged": 0
     },
     {
         "GarageName": "Paramore Garage",
-        "GarageAvailibility": 359,
+        "GarageAvailibility": 571,
         "TotalSpots": 571,
-        "TotalOccupied": 212,
-        "Timestamp": "2025-01-0712:18:19.611062",
+        "TotalOccupied": 0,
+        "Timestamp": "2025-01-0818:06:06.082354",
         "AmountChanged": 0
     },
     {
@@ -68,7 +68,7 @@
         "GarageAvailibility": 964,
         "TotalSpots": 964,
         "TotalOccupied": 0,
-        "Timestamp": "2025-01-0712:18:19.611071",
+        "Timestamp": "2025-01-0818:06:06.082365",
         "AmountChanged": 0
     }
 ]

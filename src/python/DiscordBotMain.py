@@ -7,6 +7,8 @@ from discord.ext import commands
 import os
 from dotenv import load_dotenv
 from GetGarageJSON import DumpJSON, URL
+from GetImage import TakeScreenshot
+
 
 
 def Configure():
@@ -87,9 +89,13 @@ async def Help(ctx):
                    'Help - Displays the help menu')
 
 #Displays the parking map from the website 
+#Currently not working
 @bot.command()
 async def Map(ctx):
-    await ctx.send(f'https://http.cat/404')
+    TakeScreenshot()
+  
+    await ctx.send(file=discord.File('assets/MapScreenshots/ParkingMap.png'))
+    #await ctx.send(f'https://http.cat/404')
     return
     
     

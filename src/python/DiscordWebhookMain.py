@@ -4,12 +4,9 @@ import GetGarageJSON as JSONControl
 import time
 from datetime import datetime, timedelta
 from dhooks_lite import Webhook
-
 import json
 import os
 from dotenv import load_dotenv
-
-
 
 def RunHook():
     DISCORD_WEBHOOK_URL = os.getenv('Hook')
@@ -27,7 +24,10 @@ def RunHook():
             f'Occupied spots: {Garage['TotalOccupied']}\n'+
             f'Amount changed: {Garage['AmountChanged']}\n\n')
     PrevTime = datetime.now() - timedelta(minutes=15)
-    hook.execute(f'Last updated: {PrevTime}')
+    hook.execute(f'Last updated: {PrevTime}\n\n')
+    #TakeScreenshot()
+  
+    #hook.execute(file=discord.File('assets/MapScreenshots/ParkingMap.png'))
 
 #This will send the data to the webhook as well
 def AutoRefresh(TimeSpace: int):
@@ -40,7 +40,7 @@ def AutoRefresh(TimeSpace: int):
                 curtime = datetime.now().strftime('%Y-%m-%d%H:%M:%S.%f')
                 print(f'JSON dump succeded {curtime}')
                 RunHook()
-                time.sleep(TimeSpace) #sleep for 3 minuets
+                time.sleep(TimeSpace) #sleep for 3 minutes
 
             except Exception as e: print(e)
         

@@ -4,3 +4,5 @@ __pycache__/
 .vscode/
 env/
 src/python/test.py
+assets/MapScreenshots
+docs/
